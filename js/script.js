@@ -65,10 +65,13 @@
     }
     {
     
-    let str = 'aaa bbb ccc'
-    console.log(str.substr(4, 3) = str);
+    //let str = 'aaa bbb ccc'
+    //console.log(str.substr());
+    
     //console.log(str.substring(0, 1));
     //console.log(str.slice(0, 1));
-    //console.log(str.indexOf('учу'));
+
     
     }
+
+    
