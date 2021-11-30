@@ -1,3 +1,73 @@
+/*
+//ebugger
+ function walid() {
+let i = 0;
+do {
+    i++
+} while (i < numberN.length);
+if (i < 6) {
+    confirm("Число содержит меньше шести знаков")
+    numberN = prompt("Введите шестизначное число")
+    walid();
+    
+}
+        if (i >= 7) {
+            confirm("Число содержит больше шести знаков")
+            numberN = prompt("Введите шестизначное число")
+            walid();
+}           if (i === 6){
+                Number(numberN)
+                return numberN;
+}
+else {
+    walid();
+}
+}
+let numberN = prompt("Введите шестизначное число")
+console.log(walid(numberN))
+let num1 = 0;
+let num2 = 0;
+let array = [];
+for (let i = 0; i < 6; i++) {
+   array.push(numberN[i]);
+}
+array = array.map(Number);
+for (let j = 0; j < 3; j++) {
+    num1 += array[j]
+}
+for (let k = 3; k <= 5; k++) {
+    num2 += array[k]
+}
+if (num1 === num2){
+}
+console.log(num1, num2)
+*/
+
+
+
+//debugger
+let numberN = '';
+let array = [];
+for (let i = 1000; i < 10000; i++) {
+    numberN = String(i);
+
+    for (let j = 0; j <=3; j++){
+        array.push(numberN[j]);
+        array = array.map(Number);
+       if (array[0] + array[1] === array[2] + array[3]) {
+            let result = "";
+            for (let k = 0; k <= array.length -1; k++){
+                result += array[k]
+            }   console.log(result)
+       }
+    }
+    array = [];
+    
+
+}
+
+
+
 {
     let array = [1, 3, 5, 45, 6, 9, 0, 10, 7];
         for (let i = 0; i < array.length; i++) {
@@ -49,7 +119,6 @@
             }
         }
         
-    
     }
 
 }
